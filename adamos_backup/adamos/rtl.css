@@ -52,7 +52,7 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: #FFF;
+	background: #666;
 }
 article,
 aside,
@@ -75,7 +75,7 @@ table { /* tables still need 'cellspacing="0"' in the markup */
 }
 caption, th, td {
 	font-weight: normal;
-	text-align: left;
+	text-align: right;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -124,7 +124,7 @@ textarea {
 }
 
 body {
-	background: #000; /*eee*/
+	background: #EEE;
 }
 
 /* Headings */
@@ -134,11 +134,11 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'open_sansbold', sans-serif;
 }
 h1 {
-	font-size: 36px;
+	font-size: 28px;
 	font-size: 2.8rem;
 }
 h2 {
-	font-size: 24px;
+	font-size: 22px;
 	font-size: 2.2rem;
 }
 h3 {
@@ -162,6 +162,7 @@ hr {
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
+
 }
 
 /* Text elements */
@@ -169,7 +170,7 @@ p {
 	margin-bottom: 1.5em;
 }
 ul, ol {
-	margin: 0 0 1.5em 0.5em;
+	margin: 0 0.5em 1.5em 0;
 }
 ul {
 	list-style: none;
@@ -179,7 +180,7 @@ ol {
 }
 ul ul, ol ol, ul ol, ol ul {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 dt {
 	font-weight: bold;
@@ -284,7 +285,7 @@ input[type="submit"] {
 	font-size: 1.4rem;
 	line-height: 1;
 	padding: 0.8em;
-	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	text-shadow: 0 -1px 0 rgba(255,255,255,.8);
 }
 button:hover,
 html input[type="button"]:hover,
@@ -342,7 +343,7 @@ textarea:focus {
 }
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-	padding-left: 3px;
+	padding-right: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
@@ -367,14 +368,14 @@ a:active {
 /* Alignment */
 .alignleft {
 	display: inline;
-	float: left;
-	margin-right: 1.5em;
+	float: right;
+	margin-left: 1.5em;
 	margin-bottom: 1em;
 }
 .alignright {
 	display: inline;
-	float: right;
-	margin-left: 1.5em;
+	float: left;
+	margin-right: 1.5em;
 	margin-bottom: 1em;
 }
 .aligncenter {
@@ -409,7 +410,7 @@ a:active {
 	font-size: 12px;
 	font-size: 1.2rem;
 	text-transform: uppercase;
-	float: right;
+	float: left;
 	margin-top: 20px;
 }
 
@@ -439,7 +440,7 @@ a:active {
 }
 
 #calendar_wrap{
-	padding-left: 6px;
+	padding-right: 6px;
 }
 
 #calendar_wrap a{
@@ -451,7 +452,7 @@ a:active {
 }
 
 .textwidget{
-	padding-left: 6px;
+	padding-right: 6px;
 }
 #secondary li, #tertiary li{
 	padding-bottom: 5px;
@@ -528,24 +529,24 @@ a:active {
     overflow: hidden;
 }
 #primary {
-	float: left;
-	margin: 0 -27% 0 0;
+	float: right;
+	margin: 0 0 0 -27%;
 	width: 94%;
 }
 #content {
-	margin: 0 22% 0 0;
+	margin: 0 0 0 22%;
 }
 #primary_home {
-	float: left;
+	float: right;
 	margin: 0;
 	width: 100%;
 }
 
-#content.fullwidth {margin-right: 0;}
+#content.fullwidth {margin-left: 0;}
 #secondary,
 #tertiary {
 	background: #F7F7F7;
-   	float: right;
+   	float: left;
    	margin: 0.4em 0.2em 0.4em;
     padding: 1em 1em 0;
     position: relative;
@@ -553,22 +554,22 @@ a:active {
 	border-radius:0.4em;
 }
 #tertiary {
-	clear: right;
+	clear: left;
 	padding-top: 0;
 }
 #primary-right {
-	float: right;
-	margin: 0 0 0 -27%;
+	float: left;
+	margin: 0 -27% 0 0;
 	padding: 0.7em;
 	width: 98.2%;
 }
 
 #content-right {
-	margin: 0 0 0 27%;
+	margin: 0 27% 0 0;
 }
 #sidebar-left {
 	background: #F7F7F7;
-   	float: left;
+   	float: right;
    	margin: 0.4em 0.2em 0.4em;
     padding: 1em 1em 0;
     position: relative;
@@ -576,7 +577,7 @@ a:active {
 	border-radius:0.4em;
 }
 #tertiary-left {
-	clear: left;
+	clear: right;
 	padding-top: 0;
 }
 .site-footer {
@@ -606,21 +607,21 @@ a:active {
 }
 .topbar .social-media{
 	width: 40%;
-	float: right;
-	text-align: right;
+	float: left;
+	text-align: left;
 }
 .topbar .contact-info{
 	width: 60%;
-	float: left;
+	float: right;
 	min-height: 32px;
 }
 .topbar .contact-info > span{
 	position: relative;
 	top: 4px;
-	margin-right: 12px;
+	margin-left: 12px;
 }
 .topbar .social-media a{
-	margin-left:8px;
+	margin-right:8px;
 	display: inline-block;
 	cursor: pointer;
 	font-size: 1.2em;
@@ -635,13 +636,13 @@ a:active {
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-family: 'open_sansbold', sans-serif;
-	padding-left: 6px;
+	padding-right: 6px;
 }
 .site-description {
 	font-size: 13px;
 	font-size: 1.3rem;	
 	font-family: 'open_sansbold', sans-serif;
-	padding-left: 6px;
+	padding-right: 6px;
 }
 .site-title a,
 .site-description {
@@ -651,7 +652,7 @@ a:active {
 .site-logo {
 	min-height: 70px;
 	padding-top: 2px;
-	float: left;
+	float: right;
 }
 
 /* =Menu
@@ -659,7 +660,7 @@ a:active {
 
 .main-navigation {
     display: block;
-	float: left !important;
+	float: left;
 	width: 70%;
 	padding-top: 26px;
 	font-family: 'open_sansbold', sans-serif;
@@ -671,13 +672,13 @@ a:active {
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 16px;
 	padding-right: 16px;
-	float: right;
+	padding-left: 16px;
+	float: left;
 	
 }
 .main-navigation li {
-	float: left;
+	float: right;
 	margin: 0.5em 0;
 	position: relative;
 }
@@ -688,7 +689,7 @@ a:active {
 	font-size: 11px;
     font-weight: normal;
 
-    margin-right: 1em;
+    margin-left: 1em;
     text-decoration: none;
 	text-transform: uppercase;
 	padding: 0.2em 0.8em
@@ -696,10 +697,10 @@ a:active {
 .main-navigation ul ul {
 	background: #222;
 	display: none;
-	float: left;
+	float: right;
 	position: absolute;
 	top: 1.8em;
-	left: -0.2em;
+	right: -0.2em;
 	z-index: 99999;
 	padding: 0.4em;
 	border-radius: 0.2em;
@@ -734,7 +735,7 @@ a:active {
 }
 
 .main-navigation ul ul ul {
-	left: 100%;
+	right: 100%;
 	top: -0.9em;
 	margin: 0;
 }
@@ -767,7 +768,7 @@ a:active {
 	display: none;
 	background-color: #000;
 	padding-top: 10px;
-	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .main-small-navigation .menu ul {
@@ -816,7 +817,7 @@ a:active {
 	background-color: #333;
 	color: #FFF;
 	padding: 8px;
-	border-radius:0.2em  0.2em 0 0;
+	border-radius:0.2em 0.2em 0 0;
 	text-transform: uppercase;
 }
 .recent {
@@ -844,7 +845,7 @@ a:active {
 .entry-title,
 .page-title {
 	font-family: 'open_sansbold', sans-serif;
-	font-size: 50px;
+	font-size: 16px;
     font-size: 1.6rem;
 	margin: 0.4em 0 0.2em;
 	padding-top: 10px;
@@ -880,23 +881,23 @@ body.archive .page-title {
 .entry-content table,
 .comment-content table {
 	border: 1px solid #d9d9d9;
-	border-left-width: 0;
-	margin: 0 -0.083em 2.083em 0;
-	text-align: left;
+	border-right-width: 0;
+	margin: 0 0 2.083em -0.083em;
+	text-align: right;
 	width: 100%;
 }
 .entry-content tr th,
 .entry-content thead th,
 .comment-content tr th,
 .comment-content thead th {
-	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
 	font-weight: bold;
 	padding: 0.5em 	1.25em;
 }
 .entry-content tr td,
 .comment-content tr td {
 	border: 1px solid #d9d9d9;
-  	border-width: 1px 0 0 1px;
+  	border-width: 1px 1px 0 0;
 	padding: 0.5em 	1.25em;
 }
 .entry-content tr.odd td,
@@ -906,11 +907,11 @@ body.archive .page-title {
 .entry-content ul li {
 	list-style-type: square;
 	list-style-position: outside;
-	margin-left: 1em;
+	margin-right: 1em;
 }
 .entry-content ol {
 	list-style: decimal;
-	margin: 0 0 1.5em 1.5em;
+	margin: 0 1.5em 1.5em 0;
 }
 .entry-content a, .entry-content a:visited, .entry-summary a, .entry-summary a:visited{
     color: #69C;
@@ -938,10 +939,10 @@ body.archive .page-title {
 	width: 50%;
 	margin-top:30px;
 	margin-bottom:30px;
-	float: left;
+	float: right;
 }
 .authorAvatar{
-	float: left;
+	float: right;
 	width: 138px;
 }
 .authorAvatar img{
@@ -949,9 +950,9 @@ body.archive .page-title {
 	border: 4px solid #666;
 }
 .authorInfo{
-	float: left;
+	float: right;
 	width: 60%;
-	padding-left: 6px;
+	padding-right: 6px;
 	font-size: 12px;
 }
 .authorDescrption {
@@ -971,7 +972,7 @@ body.archive .page-title {
 .authorLinks{
 	padding: 10px 2px;
 	margin: 0;
-	float:right;
+	float:left;
 	clear: both;
 }
 .authorLinks a{
@@ -998,7 +999,7 @@ body.archive .page-title {
 	width: 50px; 
 	position:fixed;
 	bottom:10px;
-	right:20px;
+	left:20px;
 	text-indent:-9999px;
 	display:none;
 	background: #666 url(images/top_button.png) no-repeat center; 
@@ -1016,17 +1017,15 @@ body.archive .page-title {
 }
 .socialIcons ul li {
 	display: inline-block;
-	margin-right: 1em;
+	margin-left: 1em;
 }
-
-.flex-caption-title { background-color: #222;}
 
 /* =Aside Post Format
 ----------------------------------------------- */
 
 .format-aside .entry-content {
-	border-left: 4px solid rgba( 0, 0, 0, 0.1 );
-	padding-left: 1em;
+	border-right: 4px solid rgba( 0, 0, 0, 0.1 );
+	padding-right: 1em;
 }
 
 
@@ -1119,12 +1118,12 @@ object {
 	overflow: hidden;
 }
 .site-content .nav-previous {
-	float: left;
+	float: right;
 	width: 50%;
 }
 .site-content .nav-next {
-	float: right;
-	text-align: right;
+	float: left;
+	text-align: left;
 	width: 50%;
 }
 .nav-previous a, .nav-next a {
@@ -1166,12 +1165,12 @@ object {
 	margin: 0;
 }
 .children {
-	margin: 0 0 0 6%;
+	margin: 0 6% 0 0;
 }
 .commentlist li.comment,
 .commentlist li.pingback {
 	border-bottom: 1px solid rgba( 0, 0, 0, 0.2 );
-	padding-left: 2.5em;
+	padding-right: 2.5em;
 	margin-top: 2px;
 }
 .commentlist .children li,
@@ -1191,8 +1190,8 @@ li.pingback {
 	padding-top: 1.0em;
 }
 .comment .avatar {
-	float: left;
-	margin-right: 1.25em;
+	float: right;
+	margin-left: 1.25em;
 }
 .comment-author {
 	font-size: 14px;
@@ -1206,11 +1205,11 @@ li.pingback {
 .comment-content{
 	font-size: 13px;
 	font-size: 1.3rem;
-	margin: 1em 0 0 4.5em;
+	margin: 1em 4.5em 0 0;
 }
 .reply { 
-	float:right;
-	margin:0 10px 10px 0;
+	float:left;
+	margin:0 0 10px 10px;
 	text-align:center;
 	background-color: #333;
 	border-radius:0.2em;
@@ -1258,7 +1257,7 @@ p.logged-in-as,
 	padding: 1em 0;
 }
 #commentform input[type="text"] {
-	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 #commentform #comment {
 	margin-top: 0.6em;
@@ -1457,9 +1456,9 @@ More info available with at http://www.apache.org/licenses/
 	font-size: 12px;
 	font-size: 1.2rem;
 	text-transform: uppercase;
-	float: right;
+	float: left;
 	margin-top: 2px;
-	padding-right: 10px;
+	padding-left: 10px;
 }
 
 /*  GROUPING  ============================================================================= */
@@ -1481,25 +1480,25 @@ More info available with at http://www.apache.org/licenses/
 
 .col {
 	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
+	float:right;
+	margin: 1% 1.6% 1% 0;
 }
 
 .col:first-child,
-.col.box-1 { margin-left: 0; } /* all browsers except IE6 and lower */
+.col.box-1 { margin-right: 0; } /* all browsers except IE6 and lower */
 
 .post-thumbnail {
 	position: relative;
 	margin-top: 4px;
-	margin-right: 4px;
+	margin-left: 4px;
 }
 
 .blog-lists-title {
 	position: relative;
 	width: 70%;
 	display: inline;
-	float: left;
-	margin-left: 8px;
+	float: right;
+	margin-right: 8px;
 	font-size: 12px;
 	color: #999;
 }
@@ -1590,7 +1589,7 @@ MEDIA QUERIES
 		width: 100%;
 	}
 	#content {
-		padding-left:4px; 	
+		padding-right:4px; 	
 	}
 }
 
@@ -1626,7 +1625,7 @@ MEDIA QUERIES
 	}
 	#content-right,
 	#primary-right {
-		background: none; 
+		background: none;
 		float: none;
 		margin: 0;
 		padding: 0;
@@ -1660,8 +1659,8 @@ MEDIA QUERIES
 	.header-image {
 		width:100%;
 		margin-top: 0px;
-		margin-left: auto;
-    	margin-right: auto;
+		margin-right: auto;
+    	margin-left: auto;
 	}
 
 	.header_container {
@@ -1682,7 +1681,7 @@ MEDIA QUERIES
 	#masthead .site-introduction {
 		float: none;
 		padding: 0;
-		padding-left: 4px;
+		padding-right: 4px;
 		width: 100%;
 	}
 	
@@ -1716,7 +1715,7 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 480px) {
 	.col { 
-		margin: 1% 0 1% 0%;
+		margin: 1% 0% 1% 0;
 	}
 }
 
