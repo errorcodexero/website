@@ -62,7 +62,7 @@ $users = array();
 						if(! $profileImage){
 							$profileImage = get_avatar( $user->user_email, '128' );
 						} else {
-							$profileImage = '<img src="' . $profileImage . '" class="avatar avatar-128 photo" width="128" height="128" alt="'. __('Profile Picture', 'adamos') .'">';
+							$profileImage = '<img src="' . $profileImage . '" class="avatar avatar-128 photo" width="128" height="128" alt="'. __('Profile Picture', '1425') .'">';
 						}
 
 						echo $profileImage 
@@ -79,7 +79,7 @@ $users = array();
 					<?php 
 						$user_post_count = count_user_posts( $user->ID );
 						if($user_post_count): ?>
-							<p class="authorLinks"><a href="<?php echo get_author_posts_url( $user->ID ); ?>"><?php echo __('Author Posts', 'adamos'); ?></a>
+							<p class="authorLinks"><a href="<?php echo get_author_posts_url( $user->ID ); ?>"><?php echo __('Author Posts', '1425'); ?></a>
 						<?php endif; 
 					?>
 

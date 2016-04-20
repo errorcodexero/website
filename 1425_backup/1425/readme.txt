@@ -1,4 +1,4 @@
-adamos is a responsive, highly customizable theme.
+1425 is a responsive, highly customizable theme.
 
 Theme instructions can be found at http://templateexpress.com/adam/documentation/
 

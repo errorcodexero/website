@@ -8,9 +8,9 @@
 
  *
 
- * @package adamos
+ * @package 1425
 
- * @since adamos 1.0
+ * @since 1425 1.0
 
  */
 

@@ -3,8 +3,8 @@
  * Template Name: Custom Home Page
  * Description: A home page with featured slider and widgets.
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
           <div class="featuretext_middle animated" data-fx="fadeInUp">
             
             <?php if(! get_theme_mod('homepage_service_title_bool')): ?>
-              <h3><?php if(get_theme_mod('homepage_service_title')){ echo esc_html(get_theme_mod('homepage_service_title')); } else { _e('Services', 'adamos'); }?></h3>
+              <h3><?php if(get_theme_mod('homepage_service_title')){ echo esc_html(get_theme_mod('homepage_service_title')); } else { _e('Services', '1425'); }?></h3>
             <?php endif; ?>
 
             <div class="unity-separator"></div>
@@ -64,7 +64,7 @@ get_header(); ?>
 
       <div class="section_thumbnails group">
 
-        <h3><?php if(get_theme_mod('homepage_recent_title')){ echo esc_html(get_theme_mod('homepage_recent_title')); } else { _e('Recent Posts', 'adamos'); }?></h3>
+        <h3><?php if(get_theme_mod('homepage_recent_title')){ echo esc_html(get_theme_mod('homepage_recent_title')); } else { _e('Recent Posts', '1425'); }?></h3>
 
         <?php 
 
@@ -92,7 +92,7 @@ get_header(); ?>
                 }
               ?>
 
-              <?php echo adamos_content(50); ?><div class="thumbs-more-link"><a href="<?php the_permalink() ?>"> <?php echo __('More', 'adamos'); ?></a></div>
+              <?php echo 1425_content(50); ?><div class="thumbs-more-link"><a href="<?php the_permalink() ?>"> <?php echo __('More', '1425'); ?></a></div>
 
             </article>
           </div>	

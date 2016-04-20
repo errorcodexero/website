@@ -4,8 +4,8 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 ?>
 
@@ -21,8 +21,8 @@
 					<div class="col span_1_of_3">
 						<?php if ( is_active_sidebar( 'left_column' ) && dynamic_sidebar('left_column') ) : else : ?>
 							<div class="widget">
-								<?php echo '<h4>' . __('Widget Ready', 'adamos') . '</h4>'; ?>
-								<?php echo '<p>' . __('This left column is widget ready! Add one in the admin panel.', 'adamos') . '</p>'; ?>
+								<?php echo '<h4>' . __('Widget Ready', '1425') . '</h4>'; ?>
+								<?php echo '<p>' . __('This left column is widget ready! Add one in the admin panel.', '1425') . '</p>'; ?>
 							</div>     
 						<?php endif; ?>  
 					</div>
@@ -30,8 +30,8 @@
 					<div class="col span_1_of_3">
 						<?php if ( is_active_sidebar( 'center_column' ) && dynamic_sidebar('center_column') ) : else : ?>
 							<div class="widget">
-								<?php echo '<h4>' . __('Widget Ready', 'adamos') . '</h4>'; ?>
-								<?php echo '<p>' . __('This center column is widget ready! Add one in the admin panel.', 'adamos') . '</p>'; ?>
+								<?php echo '<h4>' . __('Widget Ready', '1425') . '</h4>'; ?>
+								<?php echo '<p>' . __('This center column is widget ready! Add one in the admin panel.', '1425') . '</p>'; ?>
 							</div>     
 						<?php endif; ?> 
 					</div>
@@ -39,8 +39,8 @@
 					<div class="col span_1_of_3">
 						<?php if ( is_active_sidebar( 'right_column' ) && dynamic_sidebar('right_column') ) : else : ?>
 							<div class="widget">
-								<?php echo '<h4>' . __('Widget Ready', 'adamos') . '</h4>'; ?>
-								<?php echo '<p>' . __('This right column is widget ready! Add one in the admin panel.', 'adamos') . '</p>'; ?>
+								<?php echo '<h4>' . __('Widget Ready', '1425') . '</h4>'; ?>
+								<?php echo '<p>' . __('This right column is widget ready! Add one in the admin panel.', '1425') . '</p>'; ?>
 							</div>     
 						<?php endif; ?> 
 					</div>
@@ -74,8 +74,8 @@
 		        <?php else: ?>
 
 					<a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
-		            <?php _e('Adamos WordPress Theme','adamos'); ?></a>
-		            <?php echo __( 'Powered By WordPress ', 'adamos' ); ?>
+		            <?php _e('1425 WordPress Theme','1425'); ?></a>
+		            <?php echo __( 'Powered By WordPress ', '1425' ); ?>
 
 		        <?php endif; ?>
 

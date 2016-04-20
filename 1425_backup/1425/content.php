@@ -1,7 +1,7 @@
 <?php
 /**
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 ?>
 
@@ -16,11 +16,11 @@
     </div>
 	
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'adamos' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', '1425' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php adamos_posted_on(); ?>
+			<?php 1425_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 		
@@ -32,8 +32,8 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'adamos' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'adamos' ), 'after' => '</div>' ) ); ?>
+		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', '1425' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '1425' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
@@ -41,31 +41,31 @@
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'adamos' ) );
-				if ( $categories_list && adamos_categorized_blog() ) :
+				$categories_list = get_the_category_list( __( ', ', '1425' ) );
+				if ( $categories_list && 1425_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'adamos' ), $categories_list ); ?>
+				<?php printf( __( 'Posted in %1$s', '1425' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'adamos' ) );
+				$tags_list = get_the_tag_list( '', __( ', ', '1425' ) );
 				if ( $tags_list ) :
 			?>
 			<span class="sep"> | </span>
 			<span class="tag-links">
-				<?php printf( __( 'Tagged %1$s', 'adamos' ), $tags_list ); ?>
+				<?php printf( __( 'Tagged %1$s', '1425' ), $tags_list ); ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<span class="sep"> | </span>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'adamos' ), __( '1 Comment', 'adamos' ), __( '% Comments', 'adamos' ) ); ?></span>
+		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', '1425' ), __( '1 Comment', '1425' ), __( '% Comments', '1425' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'adamos' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', '1425' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

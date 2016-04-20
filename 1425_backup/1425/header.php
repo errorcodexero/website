@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package adamos
- * @since adamos 2.0
+ * @package 1425
+ * @since 1425 2.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 8]>
@@ -18,12 +18,12 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 
-<?php if(get_theme_mod('adamos_global_favicon')) : ?>
-    <link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('adamos_global_favicon')); ?>" />
+<?php if(get_theme_mod('1425_global_favicon')) : ?>
+    <link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('1425_global_favicon')); ?>" />
 <?php endif; ?>
 
-<?php if(get_theme_mod('adamos_global_apple_icon')) : ?>
-    <link rel="apple-touch-icon" href="<?php echo esc_url(get_theme_mod('adamos_global_apple_icon')); ?>">
+<?php if(get_theme_mod('1425_global_apple_icon')) : ?>
+    <link rel="apple-touch-icon" href="<?php echo esc_url(get_theme_mod('1425_global_apple_icon')); ?>">
 <?php endif; ?>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -44,7 +44,7 @@
 
     <div id="masthead-wrap">
 
-        <?php if( get_theme_mod('adamos_show_topbar')): ?>
+        <?php if( get_theme_mod('1425_show_topbar')): ?>
             <div class="topbar">
                 <div class="topbar-wrap">
                     <div class="contact-info">
@@ -60,11 +60,11 @@
 
         <header id="masthead" class="site-header header_container" role="banner">
 
-            <?php if ( get_theme_mod( 'adamos_logo' ) ) : ?>
+            <?php if ( get_theme_mod( '1425_logo' ) ) : ?>
 
                 <div class="site-logo">
 
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_theme_mod( 'adamos_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_theme_mod( '1425_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 
                 </div>
 
@@ -134,7 +134,7 @@
                           <div class="flex-caption-title">
                             <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                           </div>
-                          <p><?php echo esc_html(adamos_get_slider_excerpt()); ?> <a href="<?php the_permalink() ?>">...</a></p>
+                          <p><?php echo esc_html(1425_get_slider_excerpt()); ?> <a href="<?php the_permalink() ?>">...</a></p>
                         </div>
                       </div>
                     </li>
@@ -151,7 +151,7 @@
 
             <div class="featuretext_top">
 
-                <h3><?php if( get_theme_mod( 'featured_textbox' ) ){ echo esc_html(get_theme_mod( 'featured_textbox' ) ); } else { _e( 'Promotional Bar', 'adamos' ); } ?></h3>
+                <h3><?php if( get_theme_mod( 'featured_textbox' ) ){ echo esc_html(get_theme_mod( 'featured_textbox' ) ); } else { _e( 'Promotional Bar', '1425' ); } ?></h3>
                 
                 <?php if ( get_theme_mod( 'header_one_url' ) ) : ?>
                   <p><a href="<?php echo esc_url( get_theme_mod( 'header_one_url' ) ); ?>" ><?php echo esc_attr(get_theme_mod( 'featured_button_txt' )); ?></a></p>

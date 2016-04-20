@@ -1,6 +1,6 @@
 <?php
 
-function adamos_customize_register($wp_customize) {
+function 1425_customize_register($wp_customize) {
 
 	if (class_exists('WP_Customize_Control')) {
 
@@ -27,7 +27,7 @@ function adamos_customize_register($wp_customize) {
 	                array(
 	                    'name'              => '_customize-dropdown-categories-' . $this->id,
 	                    'echo'              => 0,
-	                    'show_option_none'  => __( '&mdash; Select &mdash;', 'adamos' ),
+	                    'show_option_none'  => __( '&mdash; Select &mdash;', '1425' ),
 	                    'option_none_value' => '0',
 	                    'selected'          => $this->value(),
 	                )
@@ -46,4 +46,4 @@ function adamos_customize_register($wp_customize) {
 	    }
 	}
 }
-add_action( 'customize_register', 'adamos_customize_register' );
+add_action( 'customize_register', '1425_customize_register' );

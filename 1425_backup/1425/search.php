@@ -2,8 +2,8 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 
 get_header(); ?>
@@ -14,10 +14,10 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'adamos' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', '1425' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<?php adamos_content_nav( 'nav-above' ); ?>
+				<?php 1425_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -26,7 +26,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php adamos_content_nav( 'nav-below' ); ?>
+				<?php 1425_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

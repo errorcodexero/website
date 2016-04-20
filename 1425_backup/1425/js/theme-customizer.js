@@ -150,7 +150,7 @@
 	} );
 
 
-	wp.customize( 'adamos_custom_main_color', function( value ) {
+	wp.customize( '1425_custom_main_color', function( value ) {
 
 		value.bind( function( to ) {
 

@@ -2,8 +2,8 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 ?>
 
@@ -18,9 +18,9 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'adamos' ), 'after' => '</div>' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '1425' ), 'after' => '</div>' ) ); ?>
         <footer class="entry-meta">
-		<?php edit_post_link( __( 'Edit', 'adamos' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', '1425' ), '<span class="edit-link">', '</span>' ); ?>
         </footer><!-- .entry-meta -->
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

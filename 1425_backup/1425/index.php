@@ -8,8 +8,8 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 
 get_header(); ?>
@@ -32,7 +32,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php adamos_content_nav( 'nav-below' ); ?>
+				<?php 1425_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

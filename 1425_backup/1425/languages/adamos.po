@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Adamos Pro\n"
+"Project-Id-Version: 1425 Pro\n"
 "POT-Creation-Date: 2015-06-25 09:57-0000\n"
 "PO-Revision-Date: 2015-06-25 09:58-0000\n"
 "Last-Translator: \n"
@@ -185,7 +185,7 @@ msgid "This right column is widget ready! Add one in the admin panel."
 msgstr ""
 
 #: ../footer.php:77
-msgid "Adamos WordPress Theme"
+msgid "1425 WordPress Theme"
 msgstr ""
 
 #: ../footer.php:78

@@ -10,7 +10,7 @@
   $response = "";
 
   //function to generate response
-  function adamos_contact_form_generate_response($type, $message){
+  function 1425_contact_form_generate_response($type, $message){
 
     global $response;
 
@@ -41,28 +41,28 @@ $message .= "Message text: ".$_POST['message_text']."\r\n";
     'Reply-To: ' . $email . "\r\n";
 
   if(!$human == 0){
-    if($human != 2) adamos_contact_form_generate_response("error", $not_human); //not human!
+    if($human != 2) 1425_contact_form_generate_response("error", $not_human); //not human!
     else {
 
       //validate email
       if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-        adamos_contact_form_generate_response("error", $email_invalid);
+        1425_contact_form_generate_response("error", $email_invalid);
       else //email is valid
       {
         //validate presence of name and message
         if(empty($name) || empty($message)){
-          adamos_contact_form_generate_response("error", $missing_content);
+          1425_contact_form_generate_response("error", $missing_content);
         }
         else //ready to go!
         {
           $sent = wp_mail($to, $subject, strip_tags($message), $headers);
-          if($sent) adamos_contact_form_generate_response("success", $message_sent); //message sent!
-          else adamos_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+          if($sent) 1425_contact_form_generate_response("success", $message_sent); //message sent!
+          else 1425_contact_form_generate_response("error", $message_unsent); //message wasn't sent
         }
       }
     }
   }
-  else if ($_POST['submitted']) adamos_contact_form_generate_response("error", $missing_content);
+  else if ($_POST['submitted']) 1425_contact_form_generate_response("error", $missing_content);
 
 ?>
 

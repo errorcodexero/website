@@ -2,7 +2,7 @@
 
 	// Add Formation Pro message
 	upgrade = $('<a class="formation-customize-plus"></a>')
-		.attr('href', 'http://www.templateexpress.com/adamos-pro-theme')
+		.attr('href', 'http://www.templateexpress.com/1425-pro-theme')
 		.attr('target', '_blank')
 		.text(pro_object.pro_message);
 	;

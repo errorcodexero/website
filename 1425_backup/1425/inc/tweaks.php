@@ -4,27 +4,27 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  *
- * @since adamos 1.0
+ * @since 1425 1.0
  */
-function adamos_page_menu_args( $args ) {
+function 1425_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'adamos_page_menu_args' );
+add_filter( 'wp_page_menu_args', '1425_page_menu_args' );
 
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since adamos 1.0
+ * @since 1425 1.0
  */
-function adamos_body_classes( $classes ) {
+function 1425_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -32,14 +32,14 @@ function adamos_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'adamos_body_classes' );
+add_filter( 'body_class', '1425_body_classes' );
 
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
  *
- * @since adamos 1.0
+ * @since 1425 1.0
  */
-function adamos_enhanced_image_navigation( $url, $id ) {
+function 1425_enhanced_image_navigation( $url, $id ) {
 	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
 		return $url;
 
@@ -49,4 +49,4 @@ function adamos_enhanced_image_navigation( $url, $id ) {
 
 	return $url;
 }
-add_filter( 'attachment_link', 'adamos_enhanced_image_navigation', 10, 2 );
+add_filter( 'attachment_link', '1425_enhanced_image_navigation', 10, 2 );

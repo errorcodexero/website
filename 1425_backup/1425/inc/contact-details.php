@@ -1,10 +1,10 @@
 <?php
 
 	$list_contact_options = array(
-		array('telnumber', __( 'Telephone Number', 'adamos'), 'phone'),
-		array('mobile', __( 'Mobile Number', 'adamos'), 'mobile'),
-		array('email', __( 'Email Address', 'adamos'), 'envelope'),
-		array('address', __( 'Address', 'adamos'), 'map-marker'),
+		array('telnumber', __( 'Telephone Number', '1425'), 'phone'),
+		array('mobile', __( 'Mobile Number', '1425'), 'mobile'),
+		array('email', __( 'Email Address', '1425'), 'envelope'),
+		array('address', __( 'Address', '1425'), 'map-marker'),
 	);
 
 	$arraycount = count($list_contact_options);

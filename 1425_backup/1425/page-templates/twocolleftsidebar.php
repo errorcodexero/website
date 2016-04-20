@@ -3,8 +3,8 @@
  * Template Name: Left sidebar
  * Description: A custom page template with sidebar on the left
  *
- * @package adamos
- * @since adamos 1.0
+ * @package 1425
+ * @since 1425 1.0
  */
 
 get_header(); ?>
@@ -25,8 +25,8 @@ get_header(); ?>
 
 <aside id="sidebar-left">
 	 <?php if ( is_active_sidebar( 'sidebar-3' ) && dynamic_sidebar('sidebar-3') ) : else : ?>
-			<?php echo '<h4>' . __('Widget Ready', 'adamos') . '</h4>'; ?>
-            <?php echo '<p>' . __('This left column is widget ready! Add one in the admin panel.', 'adamos') . '</p>'; ?>     
+			<?php echo '<h4>' . __('Widget Ready', '1425') . '</h4>'; ?>
+            <?php echo '<p>' . __('This left column is widget ready! Add one in the admin panel.', '1425') . '</p>'; ?>     
 	<?php endif; ?>  
 </aside>
 <?php get_footer(); ?>
