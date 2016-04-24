@@ -1,0 +1,85 @@
+# copyright (c) 2012-2015 WebAware Pty Ltd
+# This file is distributed under the same license as the plugin package.
+# @link https://translate.webaware.com.au/projects/nextgen-download-gallery
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: nextgen-download-gallery\n"
+"Report-Msgid-Bugs-To: translate@webaware.com.au\n"
+"POT-Creation-Date: 2015-08-30 14:31+1000\n"
+"PO-Revision-Date: 2015-08-30 14:31+1000\n"
+"Last-Translator: Ross McKay <translate@webaware.com.au>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/class.NextGENDownloadGallery.php:77
+msgid "Please select one or more images to download"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:197
+msgid "Overview"
+msgstr ""
+
+#. translators: gallery title when it has been created from image tags
+#: includes/class.NextGENDownloadGallery.php:253
+#, php-format
+msgid "tagged: %s"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:416
+msgid ""
+"NextGEN Download Gallery requires NextGEN Gallery or NextCellent Gallery"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:538
+msgid "No files found to download"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:541
+msgid "No images selected for download"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:583
+msgctxt "plugin details links"
+msgid "Get help"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:584
+msgctxt "plugin details links"
+msgid "Rating"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:585
+msgctxt "plugin details links"
+msgid "Translate"
+msgstr ""
+
+#: includes/class.NextGENDownloadGallery.php:586
+msgctxt "plugin details links"
+msgid "Donate"
+msgstr ""
+
+#: templates/gallery-download.php:39
+msgid "[View with PicLens]"
+msgstr ""
+
+#: templates/gallery-download.php:70
+msgid "select all"
+msgstr ""
+
+#: templates/gallery-download.php:71
+msgid "download selected images"
+msgstr ""
+
+#: templates/gallery-download.php:77 views/settings-form.php:18
+msgid "download all images"
+msgstr ""
+
+#: views/admin-upgrade-message.php:7
+#, php-format
+msgid "There is a new version of %s available."
+msgstr ""
