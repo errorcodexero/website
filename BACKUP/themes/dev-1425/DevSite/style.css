@@ -1,0 +1,48 @@
+/*
+Theme Name:    Dev 1425
+Theme URI:      http: //wilsonvillerobotics.com/
+Description:    Child theme for the Twenty Twelve theme 
+Author:         Wilsonville FIRST Robotics Team 1425
+Template:       twentytwelve
+Version:        0.1.0
+*/
+
+		h1 {
+			text-align: center;
+			font-size: 5em;
+		}
+	
+	body { 
+		background-color: #B8B8B8; 
+		background-image: url("development-header-(draft).png"); 
+		background-repeat: repeat-x;
+		background-position: top; 
+		background-attachment: scroll; 
+		color: black;
+		font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", "Warnock Pro", serif;
+		font-weight: normal;
+		font-style: italic;
+		font-size: 16px;
+		line-height: 1em;
+		margin: 250px;
+		}
+		
+	nav {
+    
+}
+		
+	
+.nav-bar > a {
+    border: medium solid red;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.4em 0;
+    text-align: center;
+    width: 15%;
+}
+	li
+		{
+		display:inline;
+		}

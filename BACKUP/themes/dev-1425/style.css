@@ -1,0 +1,54 @@
+/*
+Theme Name:		Dev 1425
+Theme URI:		http: //wilsonvillerobotics.com/
+Description:	Child theme for the Twenty Twelve theme 
+Author:			Wilsonville FIRST Robotics Team 1425
+Template:		twentytwelve
+Version:		0.1.0
+*/
+
+@import url('../twentytwelve/style.css');
+
+body .site {
+	background-image: url("images/finalHeader(Smalled).png");
+	background-repeat: repeat-x;
+	margin-top: 0;
+	padding: 10px 65px 65px 65px;
+	background-color: #3A3A3A;
+}
+
+.home-content {
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+
+.site-header h1 a, .site-header h2 a {
+	color: #000000;
+}
+
+.site-header h1, .site-header h2 {
+	color: #000000;
+	text-align: center;
+}
+
+.site-description{
+	margin-bottom: 75px;
+}
+
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+	box-shadow: none;
+}
+
+/* Main Nav Menu */
+
+.main-navigation li.schedule-menu-item > a {
+	color: orangered;
+	font-weight: bold;
+}
+
+/* Calendar Page */
+
+.tribe-events-calendar td.tribe-events-thismonth div a, .tribe-events-calendar td.tribe-events-thismonth div[id*="tribe-events-daynum-"] a {
+	color: black;
+}
