@@ -3,7 +3,7 @@ Welcome to Custom CSS!
 
 To learn how this works, see http://wp.me/PEmnE-Bt
 */
-h1, h2, h3, p, li {
+h1, h2, h3, p, li, header {
 	color: white !important;
 }
 
