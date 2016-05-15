@@ -598,7 +598,7 @@ a:active {
 	padding-bottom: 0;
 	padding-top: 0;
 	background-color: #222;
-	border-bottom: 1px solid #666;
+	/*border-bottom: 1px solid #666;*/
 }
 .topbar{
 	clear: both;
